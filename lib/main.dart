@@ -70,7 +70,6 @@ class _MyAppState extends State<MyApp> {
     });
     print(_questionIndex);
 
-
     if (_questionIndex < _questions.length) {
       print("We have more question!");
     }
@@ -90,9 +89,7 @@ class _MyAppState extends State<MyApp> {
           title: Text('Hello World'),
         ),
         body: _questionIndex < _questions.length
-            ?Quiz(answerQuestion: _answerQuestion,
-              questionIndex: _questionIndex, 
-             questions: _questions); 
+            ? Quiz(answerQuestion: _answerQuestion, questionIndex: _questionIndex, questions: _questions)
             : Center(
                 child: Text('You did it!'),
               ),
