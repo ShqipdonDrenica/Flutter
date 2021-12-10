@@ -101,4 +101,4 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
-//36 pa e shiku
+//40-41 me e shiku prap
