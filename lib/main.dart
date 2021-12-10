@@ -25,6 +25,13 @@ void main() {
   runApp(MyApp());
 }
 
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return _MyAppState();
+  }
+}
+
 class _MyAppState extends State<MyApp> {
   final _questions = const [
     {
