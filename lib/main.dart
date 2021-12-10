@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import './question.dart';
 import './answer.dart';
 import './quiz.dart';
+import './result.dart';
 // void main() {
 //   runApp(MyApp());
 // }
@@ -91,10 +92,12 @@ class _MyAppState extends State<MyApp> {
           title: Text('Hello World'),
         ),
         body: _questionIndex < _questions.length
-            ? Quiz(answerQuestion: _answerQuestion, questionIndex: _questionIndex, questions: _questions)
-            : Center(
-                child: Text('You did it!'),
-              ),
+            ? Quiz(
+                answerQuestion: _answerQuestion,
+                questionIndex: _questionIndex,
+                questions: _questions,
+              )
+            : Result(),
       ),
     );
   }
