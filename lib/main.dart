@@ -25,13 +25,6 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return MyAppState();
-  }
-}
-
 class _MyAppState extends State<MyApp> {
   final _questions = const [
     {
@@ -72,6 +65,8 @@ class _MyAppState extends State<MyApp> {
 
     if (_questionIndex < _questions.length) {
       print("We have more question!");
+    } else {
+      print("No more questions");
     }
   }
 
