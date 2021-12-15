@@ -38,34 +38,72 @@ class _MyAppState extends State<MyApp> {
     {
       'questionText': 'What\'s your favourite color?',
       'answers': [
-        'Black ',
-        'Red ',
-        'Green',
-        'White'
+        {
+          'text': 'Black',
+          'score': 10
+        },
+        {
+          'text': 'Red ',
+          'score': 5
+        },
+        {
+          'text': 'Green',
+          'score': 3
+        },
+        {
+          'text': 'White',
+          'score': 1
+        }
       ],
     },
     {
       'questionText': 'What\'s your favourite animal?',
       'answers': [
-        'Tiger ',
-        'Snake ',
-        'Lion',
-        'Elephant'
+        {
+          'text': 'Tiger ',
+          'score': 3
+        },
+        {
+          'text': 'Snake ',
+          'score': 11
+        },
+        {
+          'text': 'Lion',
+          'score': 4
+        },
+        {
+          'text': 'Elephant',
+          'score': 5
+        }
       ],
     },
     {
       'questionText': 'Who\'s your favourite instructor?',
       'answers': [
-        'Max ',
-        'Max ',
-        'Max',
-        'Max',
+        {
+          'text': 'Max ',
+          'score': 1
+        },
+        {
+          'text': 'Max ',
+          'score': 1
+        },
+        {
+          'text': 'Max ',
+          'score': 1
+        },
+        {
+          'text': 'Max ',
+          'score': 1
+        },
       ],
     },
   ];
   var _questionIndex = 0;
+  var _totalScore = 0;
+  void _answerQuestion(int score) {
+    _totalScore += score;
 
-  void _answerQuestion() {
     setState(() {
       _questionIndex = _questionIndex + 1;
     });
@@ -103,4 +141,4 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
-//40-41 me e shiku prap
+//43
