@@ -22,10 +22,14 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text(
-        resultPhrase,
-        style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
-        textAlign: TextAlign.center,
+      child: Column(
+        children: <Widget>[
+          Text(
+            resultPhrase,
+            style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
+          ),
+        ],
       ),
     );
   }
